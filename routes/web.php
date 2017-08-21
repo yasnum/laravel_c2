@@ -42,3 +42,5 @@ Route::get('/profile', function () {
 });
 
 Route::get('/dump','UserCtrl@dumpUser');
+
+route::resource('dash','DashController');
