@@ -13,11 +13,11 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'role_id'=>2,
+            'role_id'=>1,
             'active'=>1,
-            'name'=>'num2',
-            'username'=>'num2',
-            'email'=>'yasnum2@gmail.com',
+            'name'=>'num',
+            'username'=>'num',
+            'email'=>'yasnum@gmail.com',
             'password'=>bcrypt('num.num'),
             'remember_token'=> str_random(10),
         ]);
