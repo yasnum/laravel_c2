@@ -20,6 +20,7 @@ Route::group(['middleware'=>['authen','roles']],function(){
 });
 Route::group(['middleware'=>['authen','roles'],'roles'=>['admin']],function(){
         //User
+   
     Route::get('/managUser',['as'=>'manageUser','uses'=>'UserCtrl@manageUser']);
     Route::resource('usere', 'UserCtrl');
 });    
@@ -44,3 +45,4 @@ Route::get('/profile', function () {
 Route::get('/dump','UserCtrl@dumpUser');
 
 route::resource('dash','DashController');
+route::resource('pages','PageController');

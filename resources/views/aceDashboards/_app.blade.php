@@ -1,7 +1,7 @@
 @include('aceDashboards._head')
 @section('title','Asyafisio')
 <body class="no-skin">
-    @include('aceDashboards._navbar')
+    @include('pages._navbar')
 
     <div class="main-container ace-save-state" id="main-container">
             <script type="text/javascript">
